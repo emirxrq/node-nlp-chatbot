@@ -1,0 +1,775 @@
+{
+  "settings": {
+    "languages": [
+      "tr"
+    ],
+    "tag": "nlp",
+    "threshold": 0.5,
+    "autoLoad": true,
+    "autoSave": true,
+    "modelFileName": "model.nlp",
+    "executeActionsBeforeAnswers": false,
+    "calculateSentiment": true
+  },
+  "nluManager": {
+    "settings": {
+      "tag": "nlu-manager"
+    },
+    "locales": [
+      "tr"
+    ],
+    "languageNames": {},
+    "domainManagers": {
+      "tr": {
+        "settings": {
+          "locale": "tr",
+          "trainByDomain": false,
+          "tag": "domain-manager-tr",
+          "nluByDomain": {
+            "default": {
+              "className": "NeuralNlu",
+              "settings": {}
+            }
+          },
+          "useStemDict": true
+        },
+        "stemDict": {
+          "ne,roselia": {
+            "intent": "ABOUT",
+            "domain": "default"
+          },
+          "ne,roselia,software": {
+            "intent": "ABOUT",
+            "domain": "default"
+          },
+          "hakk,roselia,software": {
+            "intent": "ABOUT",
+            "domain": "default"
+          },
+          "hakk": {
+            "intent": "ABOUT",
+            "domain": "default"
+          },
+          "k": {
+            "intent": "ABOUT",
+            "domain": "default"
+          },
+          "hizmet": {
+            "intent": "SERVICES",
+            "domain": "default"
+          },
+          "yazılım": {
+            "intent": "SERVICES",
+            "domain": "default"
+          },
+          "yazıl": {
+            "intent": "SERVICES",
+            "domain": "default"
+          },
+          "ne,yazılım": {
+            "intent": "SERVICES",
+            "domain": "default"
+          },
+          "ne,yazıl": {
+            "intent": "SERVICES",
+            "domain": "default"
+          },
+          "gelistirici": {
+            "intent": "DEVELOPMENT",
+            "domain": "default"
+          },
+          "gelistirme": {
+            "intent": "DEVELOPMENT",
+            "domain": "default"
+          },
+          "gelistir": {
+            "intent": "DEVELOPMENT",
+            "domain": "default"
+          },
+          "gelistir,kim": {
+            "intent": "DEVELOPMENT",
+            "domain": "default"
+          },
+          "kim,se": {
+            "intent": "DEVELOPMENT",
+            "domain": "default"
+          },
+          "tesekkur": {
+            "intent": "THANKS",
+            "domain": "default"
+          },
+          "sagol": {
+            "intent": "THANKS",
+            "domain": "default"
+          },
+          "ol,sag": {
+            "intent": "THANKS",
+            "domain": "default"
+          },
+          "i": {
+            "intent": "THANKS",
+            "domain": "default"
+          },
+          "nasıl": {
+            "intent": "HOWAREYOU",
+            "domain": "default"
+          },
+          "yar": {
+            "intent": "HELP",
+            "domain": "default"
+          },
+          "merhap": {
+            "intent": "HELP",
+            "domain": "default"
+          },
+          "sor": {
+            "intent": "HELP",
+            "domain": "default"
+          }
+        },
+        "intentDict": {
+          "ABOUT": "default",
+          "SERVICES": "default",
+          "DEVELOPMENT": "default",
+          "THANKS": "default",
+          "HOWAREYOU": "default",
+          "HELP": "default"
+        },
+        "sentences": [
+          {
+            "domain": "default",
+            "utterance": "roselia nedir",
+            "intent": "ABOUT"
+          },
+          {
+            "domain": "default",
+            "utterance": "roselia software nedir",
+            "intent": "ABOUT"
+          },
+          {
+            "domain": "default",
+            "utterance": "roselia software hakkında",
+            "intent": "ABOUT"
+          },
+          {
+            "domain": "default",
+            "utterance": "hakkında",
+            "intent": "ABOUT"
+          },
+          {
+            "domain": "default",
+            "utterance": "kimsin",
+            "intent": "ABOUT"
+          },
+          {
+            "domain": "default",
+            "utterance": "hizmetleriniz",
+            "intent": "SERVICES"
+          },
+          {
+            "domain": "default",
+            "utterance": "hizmetler",
+            "intent": "SERVICES"
+          },
+          {
+            "domain": "default",
+            "utterance": "hizmet",
+            "intent": "SERVICES"
+          },
+          {
+            "domain": "default",
+            "utterance": "yazılımlar",
+            "intent": "SERVICES"
+          },
+          {
+            "domain": "default",
+            "utterance": "yazılım",
+            "intent": "SERVICES"
+          },
+          {
+            "domain": "default",
+            "utterance": "yazılımları nelerdir",
+            "intent": "SERVICES"
+          },
+          {
+            "domain": "default",
+            "utterance": "yazılımı nedir",
+            "intent": "SERVICES"
+          },
+          {
+            "domain": "default",
+            "utterance": "geliştiriciler",
+            "intent": "DEVELOPMENT"
+          },
+          {
+            "domain": "default",
+            "utterance": "geliştirme",
+            "intent": "DEVELOPMENT"
+          },
+          {
+            "domain": "default",
+            "utterance": "geliştirdi",
+            "intent": "DEVELOPMENT"
+          },
+          {
+            "domain": "default",
+            "utterance": "kim geliştirdi",
+            "intent": "DEVELOPMENT"
+          },
+          {
+            "domain": "default",
+            "utterance": "seni kim",
+            "intent": "DEVELOPMENT"
+          },
+          {
+            "domain": "default",
+            "utterance": "teşekkür",
+            "intent": "THANKS"
+          },
+          {
+            "domain": "default",
+            "utterance": "sağol",
+            "intent": "THANKS"
+          },
+          {
+            "domain": "default",
+            "utterance": "sağ ol",
+            "intent": "THANKS"
+          },
+          {
+            "domain": "default",
+            "utterance": "iyisin",
+            "intent": "THANKS"
+          },
+          {
+            "domain": "default",
+            "utterance": "nasılsın",
+            "intent": "HOWAREYOU"
+          },
+          {
+            "domain": "default",
+            "utterance": "yardım",
+            "intent": "HELP"
+          },
+          {
+            "domain": "default",
+            "utterance": "merhaba",
+            "intent": "HELP"
+          },
+          {
+            "domain": "default",
+            "utterance": "sorum",
+            "intent": "HELP"
+          }
+        ],
+        "domains": {
+          "master_domain": {
+            "settings": {
+              "locale": "tr",
+              "tag": "nlu-tr",
+              "keepStopwords": true,
+              "nonefeatureValue": 1,
+              "nonedeltaMultiplier": 1.2,
+              "spellCheck": false,
+              "spellCheckDistance": 1,
+              "filterZeros": true,
+              "log": true
+            },
+            "features": {
+              "roselia": 1,
+              "ne": 1,
+              "software": 1,
+              "hakk": 1,
+              "k": 1,
+              "hizmet": 1,
+              "yazılım": 1,
+              "yazıl": 1,
+              "gelistirici": 1,
+              "gelistirme": 1,
+              "gelistir": 1,
+              "kim": 1,
+              "se": 1,
+              "tesekkur": 1,
+              "sagol": 1,
+              "sag": 1,
+              "ol": 1,
+              "i": 1,
+              "nasıl": 1,
+              "yar": 1,
+              "merhap": 1,
+              "sor": 1
+            },
+            "intents": {
+              "ABOUT": 1,
+              "SERVICES": 1,
+              "DEVELOPMENT": 1,
+              "THANKS": 1,
+              "HOWAREYOU": 1,
+              "HELP": 1
+            },
+            "intentFeatures": {
+              "ABOUT": {
+                "roselia": 1,
+                "ne": 1,
+                "software": 1,
+                "hakk": 1,
+                "k": 1
+              },
+              "SERVICES": {
+                "hizmet": 1,
+                "yazılım": 1,
+                "yazıl": 1,
+                "ne": 1
+              },
+              "DEVELOPMENT": {
+                "gelistirici": 1,
+                "gelistirme": 1,
+                "gelistir": 1,
+                "kim": 1,
+                "se": 1
+              },
+              "THANKS": {
+                "tesekkur": 1,
+                "sagol": 1,
+                "sag": 1,
+                "ol": 1,
+                "i": 1
+              },
+              "HOWAREYOU": {
+                "nasıl": 1
+              },
+              "HELP": {
+                "yar": 1,
+                "merhap": 1,
+                "sor": 1
+              }
+            },
+            "featuresToIntent": {
+              "roselia": [
+                "ABOUT"
+              ],
+              "ne": [
+                "ABOUT",
+                "SERVICES"
+              ],
+              "software": [
+                "ABOUT"
+              ],
+              "hakk": [
+                "ABOUT"
+              ],
+              "k": [
+                "ABOUT"
+              ],
+              "hizmet": [
+                "SERVICES"
+              ],
+              "yazılım": [
+                "SERVICES"
+              ],
+              "yazıl": [
+                "SERVICES"
+              ],
+              "gelistirici": [
+                "DEVELOPMENT"
+              ],
+              "gelistirme": [
+                "DEVELOPMENT"
+              ],
+              "gelistir": [
+                "DEVELOPMENT"
+              ],
+              "kim": [
+                "DEVELOPMENT"
+              ],
+              "se": [
+                "DEVELOPMENT"
+              ],
+              "tesekkur": [
+                "THANKS"
+              ],
+              "sagol": [
+                "THANKS"
+              ],
+              "sag": [
+                "THANKS"
+              ],
+              "ol": [
+                "THANKS"
+              ],
+              "i": [
+                "THANKS"
+              ],
+              "nasıl": [
+                "HOWAREYOU"
+              ],
+              "yar": [
+                "HELP"
+              ],
+              "merhap": [
+                "HELP"
+              ],
+              "sor": [
+                "HELP"
+              ]
+            },
+            "neuralNetwork": {
+              "settings": {
+                "locale": "tr",
+                "tag": "nlu-tr",
+                "keepStopwords": true,
+                "nonefeatureValue": 1,
+                "nonedeltaMultiplier": 1.2,
+                "spellCheck": false,
+                "spellCheckDistance": 1,
+                "filterZeros": true,
+                "log": true
+              },
+              "features": [
+                "roselia",
+                "ne",
+                "software",
+                "hakk",
+                "k",
+                "hizmet",
+                "yazılım",
+                "yazıl",
+                "gelistirici",
+                "gelistirme",
+                "gelistir",
+                "kim",
+                "se",
+                "tesekkur",
+                "sagol",
+                "sag",
+                "ol",
+                "i",
+                "nasıl",
+                "yar",
+                "merhap",
+                "sor"
+              ],
+              "intents": [
+                "ABOUT",
+                "SERVICES",
+                "DEVELOPMENT",
+                "THANKS",
+                "HOWAREYOU",
+                "HELP"
+              ],
+              "perceptrons": [
+                [
+                  2.906691789627075,
+                  9.447129249572754,
+                  -1.2281543016433716,
+                  11.15246868133545,
+                  12.019796371459961,
+                  -2.2748470306396484,
+                  -11.52210807800293,
+                  -11.519868850708008,
+                  -2.2483272552490234,
+                  -2.2477104663848877,
+                  -2.247091054916382,
+                  -1.303983211517334,
+                  -0.9510210156440735,
+                  -2.246171236038208,
+                  -2.245546340942383,
+                  -1.1267646551132202,
+                  -1.1267646551132202,
+                  -2.2446186542510986,
+                  -2.243987798690796,
+                  -2.2433552742004395,
+                  -2.242720603942871,
+                  -2.2420825958251953,
+                  2.25720881157804
+                ],
+                [
+                  -4.073596477508545,
+                  0.0001483109954278916,
+                  -1.394208550453186,
+                  -2.1620728969573975,
+                  -2.162071466445923,
+                  12.123637199401855,
+                  12.123517990112305,
+                  12.123519897460938,
+                  -2.162081003189087,
+                  -2.1620802879333496,
+                  -2.1767690181732178,
+                  -1.6334152221679688,
+                  -0.9326019883155823,
+                  -2.1620798110961914,
+                  -2.162079095840454,
+                  -1.1547281742095947,
+                  -1.1547281742095947,
+                  -2.162078380584717,
+                  -2.1620774269104004,
+                  -2.162076711654663,
+                  -2.1620757579803467,
+                  -2.1620748043060303,
+                  2.162084730095678
+                ],
+                [
+                  -1.4377069473266602,
+                  -1.5720585584640503,
+                  -0.5818774700164795,
+                  -3.0071539878845215,
+                  -3.0069520473480225,
+                  -3.0098912715911865,
+                  -3.0065701007843018,
+                  -3.006362199783325,
+                  11.279562950134277,
+                  11.27977466583252,
+                  11.15752124786377,
+                  0.20577006042003632,
+                  11.021259307861328,
+                  -3.0089735984802246,
+                  -3.0087900161743164,
+                  -1.5054771900177002,
+                  -1.5054771900177002,
+                  -3.0085227489471436,
+                  -3.0083346366882324,
+                  -3.0081448554992676,
+                  -3.00795316696167,
+                  -3.0077593326568604,
+                  3.011746510650014
+                ],
+                [
+                  -1.3203494548797607,
+                  -1.4807816743850708,
+                  -0.6531828045845032,
+                  -2.7369236946105957,
+                  -2.7368438243865967,
+                  -2.7402145862579346,
+                  -2.7368364334106445,
+                  -2.736835241317749,
+                  -2.73683500289917,
+                  -2.73683500289917,
+                  -2.73683500289917,
+                  -1.5973271131515503,
+                  -1.139508605003357,
+                  11.548874855041504,
+                  11.548873901367188,
+                  5.774440288543701,
+                  5.774440288543701,
+                  11.548873901367188,
+                  -2.7405056953430176,
+                  -2.738492250442505,
+                  -2.7374730110168457,
+                  -2.7370352745056152,
+                  2.7368367486409415
+                ],
+                [
+                  -0.38399219512939453,
+                  -0.4305254817008972,
+                  -0.18289871513843536,
+                  -0.781368613243103,
+                  -0.7810539603233337,
+                  -0.7908854484558105,
+                  -0.7809906005859375,
+                  -0.7809672951698303,
+                  -0.7809630632400513,
+                  -0.7809630632400513,
+                  -0.7809630036354065,
+                  -0.45636674761772156,
+                  -0.324598491191864,
+                  -0.7809630036354065,
+                  -0.7809630036354065,
+                  -0.3904815912246704,
+                  -0.3904815912246704,
+                  -0.7809630036354065,
+                  13.50474739074707,
+                  -0.7831425666809082,
+                  -0.7821375727653503,
+                  -0.7815460562705994,
+                  0.7809634877337989
+                ],
+                [
+                  -1.1968488693237305,
+                  -1.3430771827697754,
+                  -0.5964866876602173,
+                  -2.344651222229004,
+                  -2.3408656120300293,
+                  -2.4242334365844727,
+                  -2.3401083946228027,
+                  -2.339651346206665,
+                  -2.3394575119018555,
+                  -2.339428663253784,
+                  -2.339425563812256,
+                  -1.3795149326324463,
+                  -0.9603938460350037,
+                  -2.3394248485565186,
+                  -2.3394248485565186,
+                  -1.169712781906128,
+                  -1.169712781906128,
+                  -2.3394248485565186,
+                  -2.3394246101379395,
+                  11.94628620147705,
+                  11.946285247802734,
+                  11.946284294128418,
+                  2.3394265210983045
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "intentDomains": {},
+    "extraSentences": [
+      [
+        "tr",
+        "roselia nedir"
+      ],
+      [
+        "tr",
+        "roselia software nedir"
+      ],
+      [
+        "tr",
+        "roselia software hakkında"
+      ],
+      [
+        "tr",
+        "hakkında"
+      ],
+      [
+        "tr",
+        "kimsin"
+      ],
+      [
+        "tr",
+        "hizmetleriniz"
+      ],
+      [
+        "tr",
+        "hizmetler"
+      ],
+      [
+        "tr",
+        "hizmet"
+      ],
+      [
+        "tr",
+        "yazılımlar"
+      ],
+      [
+        "tr",
+        "yazılım"
+      ],
+      [
+        "tr",
+        "yazılımları nelerdir"
+      ],
+      [
+        "tr",
+        "yazılımı nedir"
+      ],
+      [
+        "tr",
+        "geliştiriciler"
+      ],
+      [
+        "tr",
+        "geliştirme"
+      ],
+      [
+        "tr",
+        "geliştirdi"
+      ],
+      [
+        "tr",
+        "kim geliştirdi"
+      ],
+      [
+        "tr",
+        "seni kim"
+      ],
+      [
+        "tr",
+        "teşekkür"
+      ],
+      [
+        "tr",
+        "sağol"
+      ],
+      [
+        "tr",
+        "sağ ol"
+      ],
+      [
+        "tr",
+        "iyisin"
+      ],
+      [
+        "tr",
+        "nasılsın"
+      ],
+      [
+        "tr",
+        "yardım"
+      ],
+      [
+        "tr",
+        "merhaba"
+      ],
+      [
+        "tr",
+        "sorum"
+      ]
+    ]
+  },
+  "ner": {
+    "settings": {
+      "tag": "ner",
+      "entityPreffix": "%",
+      "entitySuffix": "%"
+    },
+    "rules": {}
+  },
+  "nlgManager": {
+    "settings": {
+      "tag": "nlg-manager"
+    },
+    "responses": {
+      "tr": {
+        "HELP": [
+          {
+            "answer": "Merhabalar aklınızdaki sorularınızı veya sorunlarınızı dinlemek ve yardımcı olabilmek için heyecanlanıyorum. Lütfen soru/sorununuzu açıkça bana bildirin."
+          }
+        ],
+        "HOWAREYOU": [
+          {
+            "answer": "Merhabalar bugün çok daha iyiyim ve sizlere yardımcı olabilmek için heyecanlanıyorum. Aklınıza takılan bir şey mi var?"
+          }
+        ],
+        "THANKS": [
+          {
+            "answer": "Güzel sözleriniz için teşekkür ederim, yardımcı olabildiysem ne mutlu bana."
+          }
+        ],
+        "ABOUT": [
+          {
+            "answer": "Merhaba ben Roselia Software Chat Botuyum ve burada sorularınızı cevaplandırmak için bulunuyorum."
+          }
+        ],
+        "SERVICES": [
+          {
+            "answer": "Roselia Software şirketinin şuan 2 tane yazılımı bulunmaktadır: Roselia Gaming Software ve RoseliaDB."
+          }
+        ],
+        "DEVELOPMENT": [
+          {
+            "answer": "Ben Roselia Software şirketi tarafından geliştirilmiş bir Chat botum. En yetkili geliştirici aynı zamanda Roselia Software şirketinin kurucusu olan emirxrq tarafından geliştiriliyorum. Amacım aklınızdaki soruları gidermek."
+          }
+        ]
+      }
+    }
+  },
+  "actionManager": {
+    "settings": {
+      "tag": "action-manager"
+    },
+    "actions": {}
+  },
+  "slotManager": {}
+}

@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "compromise": "^14.13.0",
+    "discord.js": "^14.15.2",
+    "natural": "^7.0.5",
+    "node-nlp": "^4.27.0"
+  }
+}
